@@ -11,6 +11,23 @@
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <style>
+        .table thead th {
+            background-color: #343a40;
+            color: white;
+        }
+        .table {
+            border: 2px solid #dee2e6; 
+            
+        }
+        .table-container {
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px; 
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
     <h1>After dinner hosted by Braeden Lhamon</h1>
@@ -37,5 +54,68 @@
         because 'col-md' specifies the break point when the
         formatting changes. The medium size can't fit before
         small sizing.</p>
+
+        <div class="image-container">
+            <img src="lemon_tart.jpg" class="img-fluid"  width="400" height="500" alt="Image of Lemon Tart">
+            <img src="apple_pie.jpeg" class="img-fluid" alt="Image of Apple Pie">
+            <img src="macarons.jpeg" class="img-fluid" alt="Image of Macarons">
+        </div>
+
+        <div class="thumbnail-container"></div>
+            <img src="lemon_tart.jpg" class="img-thumbnail" width="200" height="200" alt="Image of Lemon Tart">
+            <img src="apple_pie.jpeg" class="img-thumbnail" width="200" height="200" alt="Image of Apple Pie">
+            <img src="macarons.jpeg" class="img-thumbnail" width="200" height="200" alt="Image of Macarons">
+        </div>
+
+        <table class="table table-striped table-bordered table-hover table-striped table-sm">
+            <caption>This is a table that lists a dessert, a city, and an insect for each letter of my last name!</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Letter</th>
+                    <th scope="col">Dessert</th>
+                    <th scope="col">City</th>
+                    <th scope="col">Insect</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">L</th>
+                    <td>Lemon Tart</td>
+                    <td>Lexington</td>
+                    <td>Ladybug</td>
+                </tr>
+                <tr>
+                    <th scope="row">H</th>
+                    <td>Honey Cake</td>
+                    <td>Helsinki</td>
+                    <td>Hornet</td>
+                </tr>
+                <tr class="table-warning">
+                    <th scope="row">A</th>
+                    <td>Apple Pie</td>
+                    <td>Athens</td>
+                    <td>Ant</td>
+                </tr>
+                <tr>
+                    <th scope="row">M</th>
+                    <td>Macarons</td>
+                    <td>Madrid</td>
+                    <td>Moth</td>
+                </tr>
+                <tr>
+                    <th scope="row">O</th>
+                    <td>Oreo Cheesecake</td>
+                    <td>Orlando</td>
+                    <td>Orchid Mantis</td>
+                </tr>
+                <tr>
+                    <th scope="row">N</th>
+                    <td>Nougat</td>
+                    <td>New York</td>
+                    <td>Net-winged Beetle</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
